@@ -1,1 +1,1 @@
-# web-app
+# greeting-app
