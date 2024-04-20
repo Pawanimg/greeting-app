@@ -3,7 +3,7 @@ import './App.css';
 
 import React, { useState } from 'react';
 
-const BASE_URL = '/choreo-apis/greeting-app/greeting-ballerina-backend/greeting-service-46b/v1.0';
+const BASE_URL = '/choreo-apis/greeting/ballerina-backend/greeting-service-46b/v1.0';
 
 function fetchWithToken(url, options) {
   const token = localStorage.getItem("access");
