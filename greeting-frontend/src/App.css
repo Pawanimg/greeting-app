@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.response-container {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.response-item {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,54 @@
+openapi: 3.0.1
+info:
+  title: Main Openapi Yaml
+  version: 0.1.0
+servers:
+- url: "{server}:{port}/"
+  variables:
+    server:
+      default: http://localhost
+    port:
+      default: |2
+            PORT
+paths:
+  /sayHello:
+    get:
+      operationId: getSayhello
+      parameters:
+      - name: name
+        in: query
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+      responses:
+        "200":
+          description: Ok
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      operationId: postSayhello
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Name'
+      responses:
+        "201":
+          description: Created
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  schemas:
+    Name:
+      required:
+      - name
+      type: object
+      properties:
+        name:
+          type: string
